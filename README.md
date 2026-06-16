@@ -5,13 +5,15 @@ Android MCP server that gives Claude Code and other MCP-compatible AI assistants
 AndroMCP allows AI agents to:
 
 * Read Android UI hierarchies
-* Analyze screens
+* Analyze screens and app states
 * Tap buttons and interact with apps
-* Enter text
+* Enter text and complete forms
 * Take screenshots
 * Manage applications
 * Retrieve device information
 * Automate Android workflows
+* Navigate messaging, productivity, and social apps
+* Execute multi-step tasks based on natural language instructions
 
 ---
 
@@ -29,6 +31,8 @@ AndroMCP allows AI agents to:
 * Clickable element discovery
 * UiAutomator integration
 * AI-friendly structured UI analysis
+* Screen state understanding
+* Context-aware element selection
 
 ### 👆 Device Interaction
 
@@ -39,18 +43,22 @@ AndroMCP allows AI agents to:
 * Scroll up/down
 * Home, Back, and Recent Apps navigation
 * Key event injection
+* Multi-step workflow automation
 
 ### ⌨️ Text Input
 
 * Enter text into fields
 * Clipboard management
 * Keyboard automation
+* Form completion
+* Search field interaction
 
 ### 📸 Screenshots & Recording
 
 * Capture screenshots
 * Record screen sessions
 * Retrieve display information
+* Visual verification of actions
 
 ### 📱 App Management
 
@@ -247,6 +255,60 @@ Find the username field and enter "admin".
 Display battery level, Android version, and storage information.
 ```
 
+### Read WhatsApp Messages
+
+```text
+Open WhatsApp and tell me what unread messages I have.
+```
+
+### Reply to a Contact
+
+```text
+Open WhatsApp, find the chat with John, read the latest messages, and draft an appropriate reply.
+```
+
+### Reply Based on Conversation Context
+
+```text
+Read my latest WhatsApp messages from John and reply accordingly that I'll join the meeting in 15 minutes.
+```
+
+### Send a Message
+
+```text
+Open WhatsApp and send "I'm on my way" to Sarah.
+```
+
+### Check Notifications
+
+```text
+Review my notifications and summarize anything important.
+```
+
+### Complete a Multi-Step Task
+
+```text
+Open Gmail, find the latest email from my manager, summarize it, then create a reminder in Google Tasks.
+```
+
+### Book a Ride Workflow
+
+```text
+Open my ride-sharing app, check the estimated fare to the airport, and tell me the available options.
+```
+
+### Shopping Assistance
+
+```text
+Open Amazon, search for wireless earbuds under $100, and summarize the top results.
+```
+
+### Calendar Management
+
+```text
+Check my calendar for tomorrow and summarize all scheduled meetings.
+```
+
 ---
 
 ## Multi-Device Support
@@ -268,7 +330,7 @@ AndroMCP supports:
 
 ## Security
 
-Some operations are intentionally protected because they can modify the device.
+Some operations are intentionally protected because they can modify the device or interact with personal data.
 
 Examples:
 
@@ -278,6 +340,9 @@ Examples:
 * Running shell commands
 * Rebooting devices
 * Modifying system settings
+* Sending messages
+* Interacting with personal accounts
+* Accessing notifications and app content
 
 Always review AI-generated actions before executing them.
 
@@ -322,6 +387,7 @@ Useful for diagnosing:
 * ADB connection issues
 * Tool failures
 * Device communication problems
+* Automation workflow errors
 
 ---
 
@@ -341,4 +407,4 @@ MIT License
 
 ## Disclaimer
 
-AndroMCP is intended for development, testing, automation, and device management on Android devices that you own or are authorized to control. Users are responsible for complying with applicable laws, policies, and security requirements.
+AndroMCP is intended for development, testing, automation, and device management on Android devices that you own or are authorized to control. Features that interact with personal applications, messages, notifications, emails, or account data should only be used with appropriate authorization and user consent. Users are responsible for complying with applicable laws, policies, privacy requirements, and security obligations.
