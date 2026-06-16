@@ -1,9 +1,3 @@
-"""
-Android MCP Server — two-phase UI dump
-Phase 1: get_ui_skeleton   → tiny structural map (ids, classes, content-descs)
-Phase 2: get_element_detail / get_elements_by_class → full info for chosen nodes only
-"""
-
 import subprocess
 import xml.etree.ElementTree as ET
 import json
